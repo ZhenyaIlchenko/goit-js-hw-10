@@ -16,9 +16,9 @@ refs.input.addEventListener('input', debounce(onInput, DEBOUNCE_DELAY));
 
 function onInput() {
   const name = refs.input.value.trim();
-  if (name === '') {
-    return (refs.list.innerHTML = ''), (refs.info.innerHTML = '');
-  }
+  // if (name === '') {
+  //   return (refs.list.innerHTML = ''), (refs.info.innerHTML = '');
+  // }
 
   fetchCountries(name)
     .then(countries => {
